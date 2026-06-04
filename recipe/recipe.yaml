@@ -1,5 +1,5 @@
 context:
-  version: "1.1.2"
+  version: "1.1.3"
   python_min: "3.10"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/graphatoms/graphatoms-${{ version }}.tar.gz
-  sha256: eaa24be4ed7ae7bceb60cab8b2e3fd6cdeeadbaf1879f86680a7953ff3e88f60
+  sha256: 8a14160ff5ab7d122fa9a0a053a05013f5e442d486613f516e790ed12cad6d22
 
 build:
   noarch: python
