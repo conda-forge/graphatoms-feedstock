@@ -7,7 +7,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/g/graphatoms/graphatoms-${{ version }}.tar.gz
+  url: https://github.com/LiuGaoyong/GraphAtoms/releases/download/v${{ version }}/adsorption-${{ version }}.tar.gz
   sha256: 8d641e40e0724eea4b5c2e3c74423d29a9bf1f478443094e10ce43d7dbc49158
 
 build:
