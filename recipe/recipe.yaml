@@ -24,18 +24,23 @@ requirements:
     - python >=${{ python_min }}
     - tomli
     - ase
+    - array-api-compat >=1.15
+    - array-api-extra >=0.11
+    - array-api-strict >=2.5
     - h5py
+    - loguru
     - pymatgen >2023.6
     - rdkit >=2025
     - scikit-learn >=1.5
     - pyarrow
     - python-igraph >=0.11
     - hydra-core
+    - numpy >=2.0
     - numpydantic
+    - ovld >=0.5
     - pydantic >=2.11
     - python-snappy >=0.7.3
     - tomli-w
-    - loguru
     - typing-extensions
 
 tests:
