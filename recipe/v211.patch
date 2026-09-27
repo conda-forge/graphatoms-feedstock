@@ -1,0 +1,30 @@
+From 88d9fb4a9faed5b0bfa5177cbf8e46e44dc30378 Mon Sep 17 00:00:00 2001
+From: LiuGaoyong <liugaoyong_88@163.com>
+Date: Sun, 27 Sep 2026 10:54:19 +0800
+Subject: [PATCH] bugfix: cli run fail
+
+---
+ src/graphatoms/enterpoint/runner/ray/_expl.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/graphatoms/enterpoint/runner/ray/_expl.py b/src/graphatoms/enterpoint/runner/ray/_expl.py
+index 7bd1901..6a5c528 100644
+--- a/src/graphatoms/enterpoint/runner/ray/_expl.py
++++ b/src/graphatoms/enterpoint/runner/ray/_expl.py
+@@ -10,7 +10,7 @@
+ from graphatoms.system import System
+ 
+ 
+-@ray.remote()
++@ray.remote
+ def optimize_system(system: System, config: Config) -> System | str:
+     result, _, _ = funcs.helper_optimization(
+         config=config,
+@@ -19,7 +19,7 @@ def optimize_system(system: System, config: Config) -> System | str:
+     raise NotImplementedError("optimize_system is not implemented yet.")
+ 
+ 
+-@ray.remote(num_returns="streaming")
++@ray.remote
+ def analysis_system(system: System, config: Config) -> System | str:
+     raise NotImplementedError("run_system is not implemented yet.")

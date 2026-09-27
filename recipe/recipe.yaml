@@ -10,12 +10,12 @@ source:
   url: https://github.com/LiuGaoyong/GraphAtoms/releases/download/v${{ version }}/graphatoms-${{ version }}.tar.gz
   sha256: 83c0edb14c50b84561f921c981efc93188bb6ea2fed6c31bd7077122f286b8d6
   patches:
-    - 27.patch
+    - v211.patch
 
 build:
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
