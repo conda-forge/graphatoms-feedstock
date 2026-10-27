@@ -1,5 +1,5 @@
 context:
-  version: "2.3.3"
+  version: "3.0.0"
   python_min: "3.12"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/LiuGaoyong/GraphAtoms/releases/download/v${{ version }}/graphatoms-${{ version }}.tar.gz
-  sha256: d5fc762b84a45227274ea61e5459495a5c83a53e44f696875b1d6202312086c8
+  sha256: 365637e7f3b48b8e64786ea1d11507dde8fdde7aa3ca6d09f1326d1b44addcf0
 
 build:
   noarch: python
@@ -26,9 +26,7 @@ requirements:
     - ase
     - array-api-compat >=1.15
     - array-api-extra >=0.11
-    - array-api-strict >=2.5
     - h5py
-    - loguru
     - pymatgen >2023.6
     - rdkit >=2025
     - scikit-learn >=1.5
@@ -37,14 +35,9 @@ requirements:
     - hydra-core
     - numpy >=2.0
     - numpydantic
-    - ovld >=0.5
     - pydantic >=2.11
-    - python-snappy >=0.7.3
-    - ray-default >=2.49
     - tomli-w
     - typing-extensions
-    - executorlib
-    - typer
 
 tests:
   - python:
