@@ -1,5 +1,5 @@
 context:
-  version: "3.0.0"
+  version: "3.1.0"
   python_min: "3.12"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/LiuGaoyong/GraphAtoms/releases/download/v${{ version }}/graphatoms-${{ version }}.tar.gz
-  sha256: 365637e7f3b48b8e64786ea1d11507dde8fdde7aa3ca6d09f1326d1b44addcf0
+  sha256: cf3bfe23e1907e0f60282df052c0543b21e71e8b36eb8944d09f5164581f6d88
 
 build:
   noarch: python
